@@ -255,5 +255,9 @@ header {
 }
 .info-card{
     transform: translateX(10%);
+}.first-part img{
+   width: initial;
+   height: initial;
+    object-fit:initial;
 }
 }
