@@ -222,6 +222,18 @@ header {
 .second-part{
     text-align: center;
 }
+.types-of-events{
+    display: flex;
+   margin-top: 1rem;
+   /* gap: 1rem; */
+   flex-direction: column;
+   padding: 1.3rem;
+   max-width: 1200px;
+   gap: 1rem;
+}
+.unique{
+    margin-left: 1.3rem;
+}
 /* Desktop View */
 @media (min-width: 1024px) {
     .hamburger {
@@ -260,4 +272,16 @@ header {
    height: initial;
     object-fit:initial;
 }
+.types-of-events{
+    /* overflow-x: hidden; */
+    flex-direction: row;
+    
+}
+.containers{
+    max-width: 1200px;
+}
+.types-of-events img{
+    max-width: 290px;
+}
+
 }
