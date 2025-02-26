@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation - Mobile First */
+.nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #ff5733;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Button */
+.btn {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: none;
+}
+.nav-links.show{
+    display: block;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #e04e2a;
+}
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .btn {
+        display:block;
+}
+}
