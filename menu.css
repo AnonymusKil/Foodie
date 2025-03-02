@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color:#FFFFFF;
+    /* padding-top: 70px; */
 }
 
 /* Header */
@@ -91,6 +92,67 @@ header {
 .btn:hover {
     background-color: #e04e2a;
 }
+.before-menu-grids{
+    text-align: center;
+}
+
+.btns{
+    margin-top: 1rem;
+}
+.btns button{
+    cursor: pointer;
+    border: 1px solid rgba(219, 223, 208, 1);
+    background-color: transparent;
+    padding: 0.6rem 1.5rem;
+    border-radius: 10px;
+}
+.btns button:hover{
+    background-color: rgba(173, 52, 62, 1);
+    color: white;
+}
+.menu{
+    margin-top: 100px;
+}
+.menu-grid{
+    display: grid;
+   grid-template-columns: repeat(4,1fr);
+   padding: 1.5rem;
+   gap: 1rem;
+}
+.menu-grid img{
+    width: 100%;
+    object-fit: cover;
+}  
+.mb{
+    margin-bottom: 1rem;
+}
+.price{
+    /* font-weight: 700;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 20px; */
+    color:  rgba(173, 52, 62, 1);
+}
+.bg-white{
+    font-weight: 700;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 20px; 
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.text-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-section p {
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+  }
+  .item{
+    text-align: center;
+}
 @media (min-width: 1024px) {
     .hamburger {
         display: none;
@@ -112,4 +174,11 @@ header {
     .btn {
         display:block;
 }
+}
+@media (max-width:768px) {
+.menu-grid{
+    grid-template-columns: repeat(2,1fr);
+    overflow-x: hidden;
+}
+
 }
