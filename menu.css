@@ -143,6 +143,7 @@ header {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 10px;
+    height: 70%;
 }
 .text-section h2 {
     font-size: 24px;
@@ -156,6 +157,137 @@ header {
   }
   .item{
     text-align: center;
+}
+.first-about-brand-conta {
+    flex: 1;
+    max-width: 400px;
+}
+
+.first-about-brand-conta h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size:2rem;
+    margin-bottom: 1rem;
+}
+.first-about-brand-conta p{
+    font-size: 1rem;
+    color: #414536;
+    font-family: "Dm Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.brands-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: #F9F9F7;
+    padding: 2rem;
+}
+.main-brands{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    flex: 1;
+    justify-items: center;
+}
+.main-brands img{
+    width: 100%;
+    max-width: 150px; /* Ensures uniform size */
+    object-fit: contain;
+    height: auto;
+}
+footer {
+    background-color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    
+}
+.jan{
+    color: #737865;
+  
+}
+.general{
+    font-family: "DM Sans", serif;
+}
+.last-part-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons a {
+    display: inline-block;
+    background:#AD343E;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    background: white;
+    color: red;
+}
+.footer-section h1 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color:white;
+}
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer-section ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s;
+}
+
+.footer-section ul li a:hover::after {
+    width: 100%;
+}
+.insta-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.insta-gallery img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.insta-gallery img:hover {
+    transform: scale(1.1);
+}
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #bbb;
 }
 @media (min-width: 1024px) {
     .hamburger {
@@ -183,6 +315,20 @@ header {
 .menu-grid{
     grid-template-columns: repeat(2,1fr);
     overflow-x: hidden;
+    justify-content: center;
+}
+.brands-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-brands {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns on smaller screens */
+}
+
+.main-brands img {
+    max-width: 120px; /* Slightly smaller on mobile */
 }
 
 }
