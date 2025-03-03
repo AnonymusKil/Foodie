@@ -142,7 +142,7 @@ header {
 }
 
 .first-form-side label {
-  display: inline-block;
+  display:block;
   font-weight: bold;
   margin-bottom: 5px;
   text-align: left;
@@ -183,7 +183,7 @@ form button {
   width: 100%;
   padding: 12px;
   margin-top: 15px;
-  background: #ff6600;
+  background:#AD343E;
   color: white;
   border: none;
   font-size: 1rem;
@@ -215,6 +215,7 @@ form button:hover {
     gap: 1rem;
     background-color: white;
     padding: 1.5rem;
+    margin-bottom:1rem;
     /* position: absolute;
     width: 100%; */
 
@@ -336,6 +337,9 @@ footer {
 
   .first-form-side {
     flex-direction: row;
+  }
+  .first-form-side input{
+    border-radius: 17px;
   }
 }
 
