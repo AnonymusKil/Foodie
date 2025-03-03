@@ -143,7 +143,7 @@ header {
     border: 1px solid #ccc;
     padding: 1rem;
     border-radius: 10px;
-    height: 70%;
+    /* height: 70%; */
 }
 .text-section h2 {
     font-size: 24px;
@@ -310,6 +310,12 @@ footer {
     .btn {
         display:block;
 }
+.bg-white{
+    height: 50%;
+}
+.special{
+    margin-bottom: 1.3rem;
+}
 }
 @media (max-width:768px) {
 .menu-grid{
@@ -330,5 +336,10 @@ footer {
 .main-brands img {
     max-width: 120px; /* Slightly smaller on mobile */
 }
-
+.special{
+    margin-bottom: 1.3rem;
+}
+.bg-white{
+    height: 64%;
+}
 }
